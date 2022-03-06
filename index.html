@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IT=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!--CSS Styles -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="./Assets/css/style.css">
+  <!--Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+  <title>Austin Morrow | Web Developer</title>
+</head>
+
+<body>
+
+  <!-- Start Navbar -->
+  <nav class="navbar">
+    <div class="logo">AM</div>
+    <ul class="nav-links">
+      <input type="checkbox" id="checkbox_toggle" />
+      <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+      <div class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills" class="navLink">Skills</a></li>
+        <li><a href="#projects">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+    </div>
+  </nav>
+  <!-- End Navbar -->
+  <!-- Start About Section -->
+  <div class="aboutContainer">
+    <div class="aboutLeft">
+      <img class="selfPortrait" src="Assets/images/Portrait.jpg" alt="Portrait of Austin smiling">
+      <div class="info">
+        <h2>Austin Morrow</h2>
+        <p>Web Developer</p>
+        <div class="homeIcons">
+          <a href="https://www.linkedin.com/in/agmorrow/" target="_blank" class="icon"><img
+              src="Assets/icons/icons8-linkedin-circled.svg" alt="Linkedin icon" /></a>
+          <a href="https://github.com/agmorrow" target="_blank" class="icon"><img src="Assets/icons/icons8-github.svg"
+              alt="github icon" /></a>
+          <a href="https://twitter.com/agmorrow_" target="_blank" class="icon"><img
+              src="Assets/icons/icons8-twitter-circled.svg" alt="twitter icon" /></a>
+        </div>
+      </div>
+    </div>
+    <div class="aboutRight">
+      <div class="about" id="about">
+        <div>
+          <h1>About</h1>
+          <p>Hello! My name is Austin Morrow. I am a web developer located in Denver, CO. I started out my professional
+            career in the non-profit sector. Even before I knew about the basics of web development or even how the
+            internet works, I've always loved creativity, problem-solving, and design. I love thinking of an idea and
+            bringing it to life from the ground up.<br><br>
+            One thing that I learned in non-profit work that is still pertinent to what I do today is that you can learn
+            so much about the world through story telling. Hearing what obstacles someone has overcome, learning about
+            what they are passionate about, or even hearing what they have to give to the world can break down so many
+            walls.<br><br>
+            This discovery opened up so many possibilities even when it comes to making a website or application. Being
+            able to showcase someones work, or help a business design their website helps them continue telling their
+            story, and in return helps make this world a better place. Let's build something together!
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- End About Section -->
+  <!-- Skills Section -->
+  <div class="skills" id="skills">
+    <h1 class="skillHeader">My Skills</h1>
+    <div class="topSkills">
+      <div class="skillCard">
+        <img src="./Assets/icons/browserIcon.png">
+        <h3>Browser Based Technology</h3>
+        <p>HTML, CSS, JavaScript, jQuery</p>
+      </div>
+      <div class="skillCard">
+        <img src="./Assets/icons/developmentIcon.png">
+        <h3>Serverside Development</h3>
+        <p>Node.js, Express</p>
+      </div>
+    </div>
+    <div class="bottomSkills">
+      <div class="skillCard">
+        <img src="./Assets/icons/databaseIcon.png">
+        <h3>Database</h3>
+        <p>MySQL</p>
+      </div>
+      <div class="skillCard">
+        <img src="./Assets/icons/deploymentIcon.png">
+        <h3>Deployment</h3>
+        <p>Heroku, Git</p>
+      </div>
+    </div>
+  </div>
+
+  <!--  Projects Section -->
+  <section class="projects" id="projects">
+    <h2 class="portfolioTitle">Projects</h2>
+
+    <div class="topProject">
+      <div class="projectContainer projectCard">
+        <img src="./Assets/images/DinnerPartyApp.png" alt="Dinner Party App" loading="lazy" class="projectImage" />
+        <h3 class="projectTitle">Dinner Party App</h3>
+        <p class="projectDetails">
+          HTML, CSS, JavaScript
+        </p>
+        <p>Used MealDB API & CocktailDB API so the user can search for random or specific drinks and meal recipes.
+          Utilized localstorage to save users favorite drinks and meals.</p>
+        <a href="https://agmorrow.github.io/Project1_DinnerParty/" target="_blank" class="projectLink">view this project
+          ➜</a>
+        <a href="https://github.com/agmorrow/Project1_DinnerParty" target="_blank" class="githubLink">view code ➜</a>
+      </div>
+      <div class="projectContainer projectCard">
+        <img src="./Assets/images/Weather Dashboard.png" alt="Weather dashboard" loading="lazy" class="projectImage" />
+        <h3 class="projectTitle">Weather Dashboard</h3>
+        <p class="projectDetails">
+          HTML, CSS, JavaScript
+        </p>
+        <p>Displays current weather and 5 day forecast for city the user searches for. Utilized localstorage for saving
+          recent searches. OpenWeatherMaps API.</p>
+        <a href="https://agmorrow.github.io/WeatherDashboard_Week6_AGM/" target="_blank" class="projectLink">view this
+          project ➜</a>
+        <a href="https://github.com/agmorrow/WeatherDashboard_Week6_AGM" target="_blank" class="githubLink">view code
+          ➜</a>
+      </div>
+    </div>
+    <div class="bottomProject">
+      <div class="projectContainer projectCard">
+        <img src="./Assets/images/OfficeQuiz.png" alt="The Office Quiz" loading="lazy" class="projectImage" />
+        <h3 class="projectTitle">The Office Quiz</h3>
+        <p class="projectDetails">
+          HTML, CSS, JavaScript
+        </p>
+        <p>Timed quiz when user answers a question incorrectly, 10 seconds are deducted from the overall time. High
+          scores are saved in local storage.</p>
+        <a href="https://agmorrow.github.io/CodeQuiz_Week4_AGM/" target="_blank" class="projectLink">view this project
+          ➜</a>
+        <a href="https://github.com/agmorrow/CodeQuiz_Week4_AGM" target="_blank" class="githubLink">view code ➜</a>
+      </div>
+      <div class="projectContainer projectCard">
+        <img src="./Assets/images/Password.png" alt="Password Generator" loading="lazy" class="projectImage" />
+        <h3 class="projectTitle">Password Generator</h3>
+        <p class="projectDetails">
+          HTML, CSS, JavaScript
+        </p>
+        <p>Password generator, user is prompted to use or not use specific criteria to generate a random password.</p>
+        <a href="https://agmorrow.github.io/PasswordGenerator_Week3_AGM/" target="_blank" class="projectLink">view this
+          project ➜</a>
+        <a href="https://github.com/agmorrow/PasswordGenerator_Week3_AGM" target="_blank" class="githubLink">view code
+          ➜</a>
+      </div>
+    </div>
+
+  </section> 
+
+  <!-- Connect Section -->
+  <div class="connectContainer">
+    <div class="connectLeft" id="contact">
+      <h1>Let's Connect!</h1>
+      <div>
+        <h4>morrow.austin5@gmail.com</h4>
+        <br>
+        <h4>720.985.9184</h4>
+        <br>
+        <h4><a href="./Assets/images/Austin Morrow - Resume.pdf">view my resume</a></h4> 
+      </div>
+    </div>
+    <div class="connectRight">
+      <img src="Assets/images/computer.jpg" alt="picture of Austin working on computer" class="connectImage">
+    </div>
+  </div>
+
+
+
+
+
+  <!-- Footer Section -->
+
+
+  <footer class="footer">
+    <p>© 2022 Austin Morrow | Icons by Icons8.com</p>
+  </footer>
+
+  <!-- Website Scripts -->
+
+  <script src="Assets/js/script.js"></script>
+
+</body>
+
+</html>
